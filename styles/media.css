@@ -1,0 +1,51 @@
+@import '/node_modules//open-props/sizes.min.css';
+
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    
+    .navbar {
+     flex-direction: column;
+     /* text-align: center;   */
+      width: 30%;
+      margin-top: var(--size-fluid-5);
+      padding-top: var(--size-fluid-2);
+      padding-bottom: var(--size-fluid-2);
+     position: absolute;
+     right: 0;
+     top: 0;
+     background-color: var(--gray-4);
+     padding-right: var(--size-fluid-4);
+     text-align: center;
+     display: none;
+    }
+    .for-mobile {
+        display: flex;
+         justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    header {
+        background-position: left bottom;
+        background-size: 30%;
+    }
+    .intro-block > p {
+        margin-left: var(--size-fluid-2);
+        margin-right: var(--size-fluid-5);
+    }
+    .intro-block {
+        background-size: 100%;
+        margin-left: var(--size-fluid-2);
+        margin-right: var(--size-fluid-2);
+    }
+}
+
+@media (min-width: 1024px) {
+    .for-mobile > .fa-cus {
+        display: none;
+    }
+    header {
+        background-position-y: -50%;
+        background-size: 30%;
+    }
+}
+

@@ -1,0 +1,101 @@
+@import '/node_modules/open-props/sizes.min.css';
+@import '/node_modules/open-props/colors.min.css';
+@import '/node_modules/open-props/buttons.min.css';
+
+header {
+    background: url('/download.jpeg');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: left;
+    background-position-y: -50%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1em;
+    padding:var(--size-fluid-2);
+  
+}
+
+header {
+    background-color: var(--gray-2);
+}
+
+/* ? For Reference */
+.logo {
+ flex: 1;
+}
+
+.navbar {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    gap: var(--size-fluid-4);
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    color: var(--black-0);
+}
+
+/* ? Introduction */
+
+
+
+
+.intro-block {
+    background: url(/cloud.webp);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 70%;
+     background-position-y: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    animation: animate-left 2s ease;
+}
+
+@keyframes animate-left {
+    from {
+        background-position-x: 100%;
+    }
+    to {
+        background-position-x: 70%;
+    }
+}
+
+
+.intro-block > p {
+    margin-left: var(--size-fluid-8);
+    text-align: center;
+}
+
+.intro-block > p > .first {
+    font-size: var(--size-fluid-4);
+}
+
+.intro-block > span > button {
+    align-self: center;
+    margin-left: var(--size-fluid-8);
+    margin-top: var(--size-fluid-2);
+    background: var(--_bg);
+}
+
+.go-down-btn > button{
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+}

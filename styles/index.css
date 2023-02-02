@@ -1,0 +1,5 @@
+/* ? Importing Styles to main **/
+@import '/styles/layout.css';
+@import '/styles/fonts.css';
+@import '/styles/media.css';
+@import '/node_modules/open-props/normalize.min.css';

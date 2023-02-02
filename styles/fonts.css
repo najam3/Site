@@ -1,0 +1,19 @@
+@import '/node_modules/open-props/fonts.min.css';
+
+
+body {
+    font-family: var(--font-serif);
+    letter-spacing: var(--font-letterspacing-4);
+}
+.logo {
+    font-size: var(--font-size-fluid-1);
+}
+
+.navbar li a {
+    font-size: var(--font-size-fluid-0);
+    font-weight: var(--font-weight-6);
+}
+
+.intro-block > p > span{
+    font-size: var(--font-size-fluid-1);
+}
